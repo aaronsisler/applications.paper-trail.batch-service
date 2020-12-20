@@ -4,7 +4,7 @@
 
 ### Run
 
-To run locally on [localhost:8080](localhost:8080):
+To run locally on [localhost:8080](http://localhost:8080):
 
 ``` bash
 gradle run
