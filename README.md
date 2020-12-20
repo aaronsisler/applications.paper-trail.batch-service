@@ -24,6 +24,23 @@ To view the test report:
 open build/reports/tests/test/index.html
 ```
 
+### Docker
+
+To build application:
+```bash
+gradle clean build
+```
+
+To build Docker image:
+```bash
+docker build -t batch-service/<feature-name>
+```
+
+To run Docker container:
+```bash
+docker run -p 5000:8080 -t batch-service/<feature-name>
+```
+
 
 #### Docs
 - [Micronaut Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
