@@ -37,6 +37,10 @@ java {
     targetCompatibility = JavaVersion.toVersion("11")
 }
 
+dockerBuild {
+    images.add("${project.group}.${project.name}.${project.version}")
+}
+
 dockerBuild.dependsOn build
 
 tasks {
