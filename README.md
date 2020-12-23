@@ -33,12 +33,12 @@ gradle clean build
 
 To build Docker image:
 ```bash
-docker build -t batch-service/<feature-name>
+gradle dockerBuild
 ```
 
 To run Docker container:
 ```bash
-docker run -p 5000:8080 -t batch-service/<feature-name>
+docker run -p 5000:8080 --rm -t com.eandbsolutions.batch-service.0.1.0
 ```
 
 
